@@ -19,16 +19,15 @@ $ bundle exec rackup config.ru -p 8080
 
 ### How do I use it
 
-Assume your SOCKS5 proxy run on host 10.0.50.185 port 7891, you can create a Profile and just put the link into the input area.
+Assume your SOCKS5 proxy run on host 10.0.50.185 port 7891, you can create a Profile and just put the link into the input area. then click the Download button
 
 ```js
 https://findproxyforurl.herokuapp.com?host=10.0.50.185&port=7891
 ```
 
-![Screen Shot 2020-01-16 at 10.43.01 PM.png](https://i.loli.net/2020/01/16/Lm7x5BfoUJHGlqO.png)
+![Screen Shot 2020-01-16 at 10.49.59 PM.png](https://i.loli.net/2020/01/16/7RsB6NmuUAM1ZdP.png)
 
-----
-
+```
 MIT License
 
 Copyright (c) 2020 csrutil
@@ -50,3 +49,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
