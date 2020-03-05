@@ -25,6 +25,10 @@ Assume that your SOCKS5 proxy run on host 10.0.50.185 port 7891, you can create 
 https://findproxyforurl.herokuapp.com?host=10.0.50.185&port=7891
 ```
 
+### Credits
+
+https://github.com/codexss/auto-pac
+
 MIT License
 
 Copyright (c) 2020 csrutil
