@@ -23,11 +23,16 @@ Assume that your SOCKS5 proxy run on host 10.0.50.185 port 7891, you can create 
 
 ```js
 https://findproxyforurl.herokuapp.com?host=10.0.50.185&port=7891
+
+OR
+
+https://findproxyforurl.herokuapp.com?SOCKS5[]=10.0.50.185:7891
 ```
 
 ### Credits
 
 https://github.com/codexss/auto-pac
+https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file#dateRange
 
 MIT License
 
