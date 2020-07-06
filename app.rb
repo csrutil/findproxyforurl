@@ -1,32 +1,21 @@
 # frozen_string_literal: true
 
 require 'sinatra'
-
-PAC_TEMPLATE = File.read('public/proxy.pac').freeze
+require_relative 'template'
 
 get '/' do
-  content_type 'application/x-ns-proxy-autoconfig'
-  # content_type 'text/javascript'
+  # content_type 'application/x-ns-proxy-autoconfig'
+  content_type 'text/javascript'
 
-  # don't remove for the compatible
-  host = params[:host]
-  port = params[:port]
-
-  if host
-    proxy = ''"
-            var proxy = \"SOCKS5 #{host}:#{port}; SOCKS #{host}:#{port}\";
-            "''.strip
-  else
-    proxies = params.map do |type, items|
-      items.map do |item|
-        [type, item].join ' '
-      end.join '; '
-    end
-
-    proxy = ''"
-            var proxy = \"#{proxies.join '; '}\";
-            "''.strip
+  proxies = params.map do |type, items|
+    items.map do |item|
+      [type, item].join ' '
+    end.join '; '
   end
 
-  proxy << PAC_TEMPLATE
+  proxy = ''"
+          const proxy = \"#{proxies.join '; '}\";
+          "''.strip
+
+  proxy + get_template
 end

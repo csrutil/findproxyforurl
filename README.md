@@ -22,10 +22,6 @@ $ bundle exec rackup config.ru -p 8080
 Assume that your SOCKS5 proxy run on host 10.0.50.185 port 7891, you can create a Profile and just put the link into the input area. then click the Download button
 
 ```js
-https://findproxyforurl.herokuapp.com?host=10.0.50.185&port=7891
-
-OR
-
 https://findproxyforurl.herokuapp.com?SOCKS5[]=10.0.50.185:7891
 ```
 
