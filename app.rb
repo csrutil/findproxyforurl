@@ -13,9 +13,7 @@ get '/' do
     end.join '; '
   end
 
-  proxy = ''"
-          const proxy = \"#{proxies.join '; '}\";
-          "''.strip
+  proxy = "const proxy = \"#{proxies.join '; '}\";\n"
 
   proxy + get_template
 end
